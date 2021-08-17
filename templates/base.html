@@ -44,7 +44,7 @@
     <div class = "ml-auto form-inline">
     <form method="get"action="/search" class=" my-2 my-lg-0 mx-3">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="query" id="query">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
     </form>
     {% comment %}<a href="/admin" role="button" target="_blank" class="btn btn-success m-2 my-sm-0">Admin Panel</a>{% endcomment %}
     </div>
@@ -65,11 +65,11 @@
     You are logged in as {{request.user}}
     {% else %}
     <!--Button to Trigger Login modal -->
-    <button type="button" class="btn btn-success mr-2" data-toggle="modal" data-target="#loginModal">
+    <button type="button" class="btn btn-primary mr-2" data-toggle="modal" data-target="#loginModal">
       Login
     </button>
     <!--Button to Trigger SignUp modal -->
-    <button type="button" class="btn btn-success mr-2" data-toggle="modal" data-target="#signupModal">
+    <button type="button" class="btn btn-primary mr-2" data-toggle="modal" data-target="#signupModal">
       SignUp
     </button>
    
@@ -178,6 +178,10 @@
 {% block body %}
 
 {% endblock body %}
+
+{% block js %}
+
+{% endblock js %}
 
 
 
